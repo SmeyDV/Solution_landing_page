@@ -1,6 +1,6 @@
 "use client";
+import React from "react";
 import Contact from "@/components/Contact";
-import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
 export default function Home() {
   return (

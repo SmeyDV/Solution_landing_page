@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Users, X } from 'lucide-react';
-
+import Image from 'next/image';
 const MemberCard = ({ name, role, bio }) => {
   const [showModal, setShowModal] = useState(false);
 
@@ -8,8 +8,10 @@ const MemberCard = ({ name, role, bio }) => {
     <>
       <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
         <div className="h-48 bg-gray-200 flex items-center justify-center">
-          <img 
-            src={`https://via.placeholder.com/200?text=${name}`} 
+          <Image
+            src={'/next.svg'} 
+            width={200}
+            height={200}
             alt={name} 
             className="object-cover w-full h-full" 
           />
@@ -100,7 +102,7 @@ const About = () => {
 
         <div className="mt-16 text-center">
           <p className="text-xl text-gray-600">
-            Together, we're committed to revolutionizing healthcare through innovative solutions and dedication to excellence.
+            Together, we&apos;re committed to revolutionizing healthcare through innovative solutions and dedication to excellence.
           </p>
         </div>
       </div>

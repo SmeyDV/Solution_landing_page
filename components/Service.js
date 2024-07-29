@@ -22,7 +22,7 @@ const Service = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 mt-8">
+    <div className="container mx-auto px-4 mt-32 mb-32">
       <h2 className="text-3xl font-extrabold text-center mb-4">Premium Plans</h2>
       <p className="text-center mb-8 text-gray-600">
         Sample text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nunc justo, sagittis suscipit ultrices.

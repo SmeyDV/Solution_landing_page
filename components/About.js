@@ -1,6 +1,7 @@
 import React from 'react';
 import { Users } from 'lucide-react';
-import MemberCard from './MemberCard';
+import MemberCard from '/components/MemberCard';
+
 
 const About = () => {
   const members = [
@@ -23,7 +24,7 @@ const About = () => {
     {
       name: 'Smey',
       role: 'UX/UI Designer',
-      bio: "Smey's expertise in user-centered design ensures our solutions are not only functional but also intuitive and accessible to all users.",
+      bio: "Smey expertise in user-centered design ensures our solutions are not only functional but also intuitive and accessible to all users.",
     },
     {
       name: 'Reach',
@@ -43,7 +44,7 @@ const About = () => {
   ];
 
   return (
-    <div className="bg-gray-100 py-16">
+    <div className="bg-gray-100 py-20 mt-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <Users className="mx-auto h-12 w-12 text-blue-600" />
@@ -53,7 +54,7 @@ const About = () => {
           </p>
         </div>
         <div className="mt-10">
-          <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">Solution Group</h3>
+          <h3 className="text-3xl font-bold text-black text-center mb-8">Solution Group</h3>
           <div className="grid grid-cols-3 gap-8">
             {members.map((member, index) => (
               <MemberCard key={index} {...member} />
@@ -62,7 +63,7 @@ const About = () => {
         </div>
         <div className="mt-16 text-center">
           <p className="text-xl text-gray-600">
-            Together, we're committed to revolutionizing healthcare through innovative solutions and dedication to excellence.
+            Together, we&apos;re committed to revolutionizing healthcare through innovative solutions and dedication to excellence.
           </p>
         </div>
       </div>

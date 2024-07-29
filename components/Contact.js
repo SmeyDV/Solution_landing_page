@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import { useState } from "react";
 
 const Contact = () => {
@@ -28,8 +29,16 @@ const Contact = () => {
         <title>Contact Us</title>
         <meta name="description" content="Get in touch with us" />
       </Head>
-      <div className="max-w-lg w-full mx-auto px-4 sm:px-6 lg:px-8 mt-24 mb-24"> {/* Adjust mt-24 based on navbar height */}
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+      <div className="max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 mt-16 mb-16">
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden grid grid-cols-1 md:grid-cols-2">
+          <div className="hidden md:block relative">
+            <Image
+              src="/contactpic.webp" 
+              alt="Contact Us"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
           <div className="px-6 py-8 sm:px-10">
             <h3 className="mb-6 text-3xl font-bold text-gray-900 text-center">
               Contact Us

@@ -4,7 +4,7 @@ const PricingCard = ({ title, price, features, isHighlighted }) => (
   <div
     className={`p-6 rounded-lg shadow-lg transition-colors duration-300 transform hover:scale-105 ${
       title === 'BUSINESS'
-        ? 'bg-black text-white hover:bg-gray-800'
+        ? 'bg-black text-white hover:bg-gray-900'
         : isHighlighted
         ? 'bg-blue-500 text-white hover:bg-blue-600'
         : 'bg-gray-100 hover:bg-gray-200'
@@ -26,7 +26,7 @@ const PricingCard = ({ title, price, features, isHighlighted }) => (
           ? 'bg-white text-black hover:bg-gray-300'
           : isHighlighted
           ? 'bg-white text-blue-500 hover:bg-blue-100'
-          : 'bg-black text-white hover:bg-gray-800'
+          : 'bg-black text-white hover:bg-gray-900'
       }`}
     >
       GET PLAN

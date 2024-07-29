@@ -1,5 +1,5 @@
 'use client';
-import NavBar from '../components/navbar'; // Adjust the path as needed
+import NavBar from '../components/NavBar'; 
 import { Poppins } from 'next/font/google';
 import './globals.css';
 

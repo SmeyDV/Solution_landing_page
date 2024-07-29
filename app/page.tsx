@@ -1,7 +1,7 @@
 "use client";
-import NarBar from "../components/navbar";
-import Hero from "../components/hero";
-import Feature from "../components/feature";
+import NarBar from "../components/NavBar";
+import Hero from "../components/Hero";
+import Feature from "../components/Feature";
 import Footer from "../components/Footer";
 export default function Home() {
   return (

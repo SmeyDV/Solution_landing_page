@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import Footer from "../../components/footer";
-import Service from "../../components/service";
+import Footer from "../../components/Footer";
+import Service from "../../components/Service";
 
 export default function page() {
   return (

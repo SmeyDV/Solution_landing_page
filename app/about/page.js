@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import About from "../../components/about";
-import Footer from "../../components/footer";
+import About from "../../components/About";
+import Footer from "../../components/Footer";
 function page() {
   return (
     <div>

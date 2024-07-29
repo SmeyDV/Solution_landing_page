@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import Contact from "../../components/contact";
-import Footer from "../../components/footer";
+import Contact from "../../components/Contact";
+import Footer from "../../components/Footer";
 export default function Home() {
   return (
     <>

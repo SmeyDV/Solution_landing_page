@@ -2,7 +2,7 @@
 import NarBar from "../components/navbar";
 import Hero from "../components/hero";
 import Feature from "../components/feature";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 export default function Home() {
   return (
     <>

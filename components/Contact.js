@@ -1,6 +1,8 @@
+import React, { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Head from "next/head";
 import Image from "next/image";
-import { useState } from "react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +11,10 @@ const Contact = () => {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -30,10 +36,13 @@ const Contact = () => {
         <meta name="description" content="Get in touch with us" />
       </Head>
       <div className="max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 mt-16 mb-16">
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden grid grid-cols-1 md:grid-cols-2">
+        <div
+          className="bg-white shadow-lg rounded-lg overflow-hidden grid grid-cols-1 md:grid-cols-2"
+          data-aos="zoom-in"
+        >
           <div className="hidden md:block relative">
             <Image
-              src="/contactpic.webp" 
+              src="/contactpic.webp"
               alt="Contact Us"
               layout="fill"
               objectFit="cover"
